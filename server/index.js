@@ -13,6 +13,7 @@ app.get('/health', (req, res) => {
 
 app.use('/auth', require('./routes/auth'));
 app.use('/readings', require('./routes/readings'));
+app.use('/reports', require('./routes/reports'));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
